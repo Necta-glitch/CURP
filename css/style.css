@@ -179,16 +179,15 @@ select {
     border-radius: 64px;
     
   }
-  .Dia{
+  .Date{
     border: 2px solid red;
-    width: 200px;
-
   }
-  .Mes{
-    border: 2px solid red;
 
-  }
-  .Año{
-    border: 2px solid red;
-
+  @media (max-width:700px) {
+      .Date{
+        display: inline-block;
+        width:50px ;
+        position: relative;
+        left: 70px;
+      }
   }
