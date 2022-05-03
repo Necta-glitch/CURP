@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Get your Curp</title>
+</head>
+<body>
+    <!--Header section start-->
+    <!--Header section starts-->
+    <header>
+        <a href="" class="logo">CURP</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    </header>
+    <!--Header section ends-->
+    <!--Formulario section starts-->
+   <section class="form-container">
+           <!--Contac section start-->
+    <section class="contact" id="contact">
+        <h1 class="heading">Solicitar Curp</h1>
+        <form action="">
+        <div class="inputBox">
+            <input type="text" name="nombre" id="nombre" required>
+            <label>Nombre</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="apellido_paterno" id="apellido_paterno" required>
+            <label>Apellido Paterno</label>
+            </div>
+        <div class="inputBox">
+            <input type="text" name="apellido_materno" id="apellido_materno" required>
+            <label>Apellido Materno</label>
+        </div>
+        <div class="inputBox">
+            <label class="g-nero">Genero</label>
+            <select name="sexo" id="sexo">
+              <option>Seleccionar...</option>
+              <option value="H">Hombre</option>
+              <option value="M">Mujer</option>
+            </select>
+        </div>
+        <div class="inputBox">
+            <label>Fecha de nacimiento</label>
+            <input class="Dia" type="text" name="dia" id="dia" style="width:20px" maxlength="2" placeholder="Dia" /> 
+            <input class="Mes" type="text" name="mes" id="mes" style="width:20px" maxlength="2" placeholder="Mes"/> 
+            <input class="Año" type="text" name="anio" id="anio" style="width:35px" maxlength="4" placeholder="Mes"/>
+        </div>
+        <div class="inputBox">
+            <label class="state">Estado</label>
+            <select name="estado" id="estado">
+                <option>Sleccionar..</option>
+                <option value="GT">GUANAJUATO</option> 
+                <option value="GR">GUERRERO</option> 
+                <option value="HG">HIDALGO</option> 
+                <option value="JC">JALISCO</option> 
+                <option value="MC">MEXICO</option> 
+                <option value="MN">MICHOACAN DE OCAMPO</option> 
+                <option value="MS">MORELOS</option> 
+                <option value="NT">NAYARIT</option> 
+                <option value="NL">NUEVO LEON</option> 
+                <option value="OC">OAXACA</option> 
+                <option value="PL">PUEBLA</option> 
+                <option value="QT">QUERETARO DE ARTEAGA</option> 
+                <option value="QR">QUINTANA ROO</option> 
+                <option value="SP">SAN LUIS POTOSI</option> 
+                <option value="SL">SINALOA</option> 
+                <option value="SR">SONORA</option> 
+                <option value="TC">TABASCO</option> 
+                <option value="TS">TAMAULIPAS</option> 
+                <option value="TL">TLAXCALA</option> 
+                <option value="VZ">VERACRUZ</option>
+                <option value="YN">YUCATAN</option> 
+                <option value="ZS">ZACATECAS</option> 
+                <option value="NE">NACIDO EN EL EXTRANJERO</option>
+              </select>
+        </div>
+    </form>
+    <input type="submit" id="btn"  onclick="calcularCurp()" class="btn" value="Generar">
+        <input class="resultado" type="text" id="resultado" name="resultado">
+        
+        
+    </section>
+    <!--Contac section ends-->
+    <!--LINK JS-->
+    <script src="./js/script.js"></script>
+</body>
+</html>
